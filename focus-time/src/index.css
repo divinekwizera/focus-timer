@@ -1,0 +1,166 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.timer-card {
+  background: white;
+  width: 100%;
+  max-width: 430px;
+  padding: 40px 30px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.timer-card h1 {
+  color: #202b45;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #8791a5;
+  margin-bottom: 35px;
+}
+
+.timer-circle {
+  width: 230px;
+  height: 230px;
+  border: 10px solid #e8e9ff;
+  border-top-color: #6256d9;
+  border-radius: 50%;
+  margin: 0 auto 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-content h2 {
+  font-size: 52px;
+  color: #5145cd;
+  font-weight: bold;
+}
+
+.timer-content p {
+  color: #8992a2;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.buttons button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buttons button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.buttons button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.start-btn {
+  background: #5145cd;
+}
+
+.pause-btn {
+  background: #e5a12a;
+}
+
+.reset-btn {
+  background: #e05252;
+}
+
+.break-message {
+  background: #e4f8e9;
+  color: #238447;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.sessions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: #f4f5fb;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.sessions span {
+  font-size: 30px;
+}
+
+.sessions h3 {
+  font-size: 24px;
+  color: #5145cd;
+}
+
+.sessions p {
+  font-size: 13px;
+  color: #8791a5;
+}
+
+@media (max-width: 480px) {
+  .timer-card {
+    padding: 30px 18px;
+  }
+
+  .timer-card h1 {
+    font-size: 25px;
+  }
+
+  .timer-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .timer-content h2 {
+    font-size: 43px;
+  }
+
+  .buttons {
+    gap: 7px;
+  }
+
+  .buttons button {
+    padding: 11px 14px;
+    font-size: 12px;
+  }
+}
